@@ -1,4 +1,4 @@
 # Wordle-Solution-Scraper
 ## Dependencies
-  ###pip install selenium
+    pip install selenium
  
