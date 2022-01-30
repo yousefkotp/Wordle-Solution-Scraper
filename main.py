@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('headless')
 chrome_options.add_argument("disable-gpu")
@@ -11,5 +12,6 @@ scriptArray="return Array.apply(0, new Array(localStorage.length)).map(function 
 result = driver.execute_script(scriptArray)
 s = result
 ans = s[0][105]+s[0][106]+s[0][107]+s[0][108]+s[0][109]
+driver.close();
 print(ans)
 input("Press any key to exit: ")
